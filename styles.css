@@ -10,23 +10,26 @@ html{
     margin:0px;
 }
 
-header img {
-    border-radius: 50%;
-    }
-
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 0.9em;
-    height:50vw;
 }
+
+header img {
+    border-radius: 50%;
+    }
 
 .container>main{
     padding: 0em 2em 0em 2em;
 }
 
+.container>main>article{
+    padding: 1.5em 0em 1.5em 0em;
+}
+
 .container>aside{
-    padding: 0em 2em 0em 1.5em;
+    padding: 2em 2em 0em 1.5em;
 }
 
 .container>header{
@@ -45,11 +48,9 @@ div header h1{
     font-family:  Georgia, 'Times New Roman', Times, serif;
 }
 
-
 div main article h2.Blog-titles {
     font-size: 32px;
-    color: #48BB78;
-    
+    color: #48BB78;   
 }
 
 div main article p.Blog-date-and-name {
@@ -59,7 +60,19 @@ div main article p.Blog-date-and-name {
 div aside{
     display: flex;
     flex-flow: column wrap;
-    padding-right: 2em;
+}
+
+div aside section#About{
+    background: #E2E8F0;
+    color: #000000;
+}
+
+div aside section#Social-Media, section#Archives h3{
+    color: #48BB78;
+}
+
+div aside h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 div aside li {
@@ -71,21 +84,8 @@ div aside li a{
     color: #4299E1;
 }
 
-div aside h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 div aside section{
     padding: 2em;
-}
-
-div aside section#about{
-    background: #E2E8F0;
-    color: #000000;
-}
-
-div aside section#Social-media, section#Archives h3{
-    color: #48BB78;
 }
 
 div footer{
@@ -101,3 +101,7 @@ hr{
     height: .15em;
     background: #c1bebed1;
 }
+
+p{
+    margin-bottom: 1.5em;
+  }
