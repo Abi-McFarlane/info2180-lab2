@@ -1,0 +1,103 @@
+html{
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+header img {
+    border-radius: 50%;
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0.9em;
+    height:50vw;
+}
+
+.container>main{
+    padding: 0em 2em 0em 2em;
+}
+
+.container>aside{
+    padding: 0em 2em 0em 1.5em;
+}
+
+.container>header{
+    display:flex;
+    color: #FFFFFF;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 /span 2;
+    background: #63B3ED;
+    padding:  1.5em 0em 1.5em 0em;
+}
+
+div header h1{
+    font-size: 36px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+
+div main article h2.Blog-titles {
+    font-size: 32px;
+    color: #48BB78;
+    
+}
+
+div main article p.Blog-date-and-name {
+    color: #718096;
+}
+
+div aside{
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 2em;
+}
+
+div aside li {
+    list-style-type: none;
+}
+
+div aside li a{
+    text-decoration: none;
+    color: #4299E1;
+}
+
+div aside h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div aside section{
+    padding: 2em;
+}
+
+div aside section#about{
+    background: #E2E8F0;
+    color: #000000;
+}
+
+div aside section#Social-media, section#Archives h3{
+    color: #48BB78;
+}
+
+div footer{
+    display:flex;
+    grid-column: 1 /span 2;
+    background: #2C5282;
+    color: #FFFFFF;
+    justify-content: center;
+    padding: 0.9em 0em 0.9em 0em;
+}
+
+hr{
+    height: .15em;
+    background: #c1bebed1;
+}
